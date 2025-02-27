@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+    html{
+        font-family: "poppins", "sans-serif";
+    }
+
+    body{
+        background-color: rgb(36, 36, 36);
+        color: white    ;
+    }
+}
+
+@layer components{
+    .input-box {
+        @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded-2xl mb-4 outline
+    }
+
+    .btn-primary {
+        @apply w-full text-sm bg-black text-white p-2 rounded my-1
+    }
+}
