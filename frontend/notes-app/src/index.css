@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @layer base {
     html{
         font-family: "poppins", "sans-serif";
@@ -18,5 +19,8 @@
 
     .btn-primary {
         @apply w-full text-sm bg-black text-white p-2 rounded my-1
+    }
+    .icon-btn{
+        @apply text-xl text-sky-800 cursor-pointer hover:text-blue-50
     }
 }
