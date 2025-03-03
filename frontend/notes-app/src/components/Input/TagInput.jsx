@@ -32,13 +32,14 @@ const TagInput = ({ tags, setTags, }) => {
 
             {tags.length > 0 && (
                 <div className='flex items-center gap-2 flex-wrap mt-2'>
-                    {tags.map((tag, index) => {
-                        <span key={index} className=''>#{tag}
-                            <button onClick={() => {handleRemoveTag(tag)}}>
+                    {tags.map((tag, index) => (
+                        <span key={index} className="px-2 py-1 bg-gray-200 rounded flex items-center">
+                            #{tag}
+                            <button onClick={() => handleRemoveTag(tag)} className="ml-2 text-red-500 hover:text-red-700">
                                 <MdClose />
                             </button>
                         </span>
-                    })}
+                    ))}
                 </div>)}
 
             <div className='flex items-center gap-4 mt-3'>
